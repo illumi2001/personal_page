@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>illumi.moe</title>
+
+	<!-- styles -->
+	<link href="assets/styles/global.css" rel="stylesheet">
+
+	<!-- scripts -->
+	<script src="assets/scripts/clock.js"></script>
+
+	<!-- for safari -->
+	<meta name="theme-color" content="#252525" media="screen and (max-width: 680px)">
+	<meta name="theme-color" content="#654ea3"> <!-- FIXME: it seems safari doesnt fall back to this one properly... -->
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<!-- sidebar -->
+			<img class="avatar" src="assets/images/avatar.jpg" 
+				alt="Matt's profile picture, undetermined glitch-y anime girl from some breakcore album cover"
+				title="Matt's profile picture, undetermined glitch-y anime girl from some breakcore album cover">
+			<p class="title">Matt <small style="font-weight: normal">he/him</small></p>
+
+			
+
+			<p id="clock" style="display: none; margin-bottom: 0;"> <!-- careful, this style attribute also gets set in clock.js -->
+				<img src="assets/images/icons/clock-regular.svg"
+					alt="clock icon"
+					title="clock icon"
+					class="invert small-icon">
+				<span>clock text</span>
+			</p>
+			
+			<p id="language"> <!-- careful, style attribute here gets overwritten in clock.js -->
+				<img src="assets/images/icons/language-solid.svg"
+					alt="language icon"
+					title="language icon"
+					class="invert small-icon">
+				<span><b><abbr title="English, preferred">Eng</abbr></b>/<abbr title="Русский/Russian">Rus</abbr> OK</span>
+			</p>
+
+			<!-- links -->
+			<p class="link">
+				<img src="assets/images/icons/github.svg" 
+					alt="github logo"
+					title="github logo">
+				<a href="https://github.com/illumi2001" target="_blank" rel="me">github projects</a>
+			</p>
+			<p class="link">
+				<img src="assets/images/icons/osu.svg" 
+					alt="osu logo"
+					title="osu logo">
+				<a href="https://osu.ppy.sh/users/5382596" target="_blank">osu profile</a>
+			</p>
+			<p class="link">
+				<img src="assets/images/icons/anilist.svg"
+					alt="anilist logo"
+					title="anilist logo"
+					class="invert">
+				<a href="https://anilist.co/user/illuminaughty/" target="_blank">anilist</a>
+			</p>
+			<p class="link">
+				<img src="assets/images/icons/retrospring.jpg" 
+					alt="retrospring logo"
+					title="retrospring logo">
+				<a href="https://retrospring.net/@illumi" target="_blank">ask me questions</a>
+			</p>	
+		</div>
+		<div id="content">
+			<!-- content -->
+			<p class="title">
+				<marquee>welcome to my little corner of the internet</marquee>  <!-- appears to be deprecated-->
+			</p>
+
+			<p>
+				hi! i'm Matthew, or illumi on the internet :3
+			</p>
+
+			<p>
+				i spend most of my time playing videogames ¹, doing computer stuff ², and slowly integrating into the fediverse
+			</p>
+
+			<p>
+				i just moved in here, i'm still unpacking all of my stuff; major redesign coming soon!
+			</p>
+
+			<p>
+				¹ i like rhythm games (e.g. osu, thumper,), competitive games (e.g. league, brawl, <abbr title="counter strike: global offensive">csgo</abbr>), singleplayer story games (e.g. stray, undertale), and a bunch of others
+			</p>
+
+			<p>
+				² coding, <abbr title="data analysis: collect, organize, and analyze data to make informed, data driven, decisions">data analysis</abbr>, or working on some random project ^_^
+			</p>
+
+			<p><small>p.s. sometimes i shutdown and take a while to reboot... sorry about that</small></p>
+
+			<!-- page view counter -->
+			<p>
+				<a href="https://info.flagcounter.com/4jVk"><img src="https://s11.flagcounter.com/mini/4jVk/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
