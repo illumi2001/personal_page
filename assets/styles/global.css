@@ -1,0 +1,150 @@
+/* setup */
+:root,
+body {
+	width: 100%;
+	min-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Comic Neue', sans-serif;
+	color: white;
+
+	background-color: #654ea3;
+	background-image: url("../images/background-50percent.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a,
+a:visited,
+a:hover {
+	color:
+		/*#8f6daf*/
+		#C9E2E6;
+}
+
+#container {
+	max-width: 720px;
+	width: 100%;
+	text-align: left;
+	background-color: #101010;
+
+	display: flex;
+	flex-direction: row;
+
+	overflow-y: auto;
+	overflow-x: auto;
+
+	border-radius: 4px;
+}
+
+/* mobile */
+@media screen and (max-width: 560px) {
+	#body {
+		display: auto;
+	}
+
+	:root,
+	body {
+		overflow-y: auto;
+		overflow-x: auto;
+
+		width: 100%;
+	}
+
+	#container {
+		flex-direction: column;
+		/*width: 100%;*/
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	#sidebar {
+		max-width: 680px !important;
+	}
+}
+
+/* sidebar */
+#sidebar {
+	max-width: 220px;
+	width: calc(100% - 2em);
+	background-color: #252525;
+	padding: 1em;
+}
+
+#sidebar .avatar {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.link {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sidebar > .link {
+	width: 100%;
+}
+
+#sidebar .horizontal-links {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.link a {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.small-icon,
+.link img {
+	height: 1em;
+	width: 1em;
+	vertical-align: text-bottom;
+	margin-right: 0.2em;
+}
+
+.invert {
+	filter: invert();
+}
+
+
+/* content */
+#content {
+	max-width: 480px;
+	width: calc(100% - 2em);
+	padding: 1em;
+}
+
+.title {
+	width: calc(100% - 16px);
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-radius: 4px;
+
+	background: #654ea3;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #C9E2E6, #879AB2);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #C9E2E6, #879AB2);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
